@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 Rails.application.routes.draw do
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
@@ -5,6 +7,6 @@ Rails.application.routes.draw do
   # root "articles#index"
 
   namespace :v1, defaults: { format: :json } do
-    get "messages", to: "messages#index"
+    get 'messages', to: 'messages#index'
   end
 end
